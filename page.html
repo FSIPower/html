@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="style.css" />
+	<title>Titre de la page</title>
+</head>
+
+<!-- ..............................................................................................PAGE....................................... -->
+<body>
+
+	<!-- ..............................................................................................PAGE....................................... -->
+	<div id="bloc_page">
+
+		<!-- ..............................................................................................HEADER..................................... -->
+
+		<header>
+
+			<div id="titre_principal">
+				<img src="img/gulf.png" alt="Logo Gulf" />
+				<h1>Titre de la page</h1>    
+				<h2>Sous titre de la page</h2>
+			</div>
+
+			<nav>
+				<ul>
+					<!-- un index par exemple -->
+					<li><a href="#">Accueil</a></li>
+					<li><a href="#">Menu</a></li>
+					<li><a href="#">Contact</a></li> <!-- # donne des liens factices -->
+				</ul>
+			</nav>
+
+		</header>
+
+		<!-- ..............................................................................................BANNIERE.................................. -->
+
+		<div id="banniere_image">
+			<div id="banniere_description">
+				Voici la bannière de ce site
+				<a href="#" class="bouton_rouge">Voir l'article <img src="img/flecheblanchedroite.png" alt="" /></a>
+			</div>
+		</div>
+
+
+
+		<!-- ..............................................................................................SECTION 1................................. -->
+
+		<section id="main">
+
+
+
+			<!-- ...............................................................................ARTICLE 1................................. -->
+
+			<article id="acc">
+				<h1><img src="img/ico_epingle.png" alt="Catégorie voyage" class="ico_categorie" />Article 1</h1>
+				<p><strong>Lorem ipsum</strong> dolor sit amet, consectetur adipiscing elit. Aliquam nec sagittis massa. Nulla facilisi. Cras id arcu lorem, et semper purus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis vel enim mi, in lobortis sem. Vestibulum luctus elit eu libero ultrices id fermentum sem sagittis. Nulla imperdiet mauris sed sapien dignissim id aliquam est aliquam. Maecenas non odio ipsum, a elementum nisi. Mauris non erat eu erat placerat convallis. Mauris in pretium urna. Cras laoreet molestie odio, consequat consequat velit commodo eu. Integer vitae lectus ac nunc posuere pellentesque non at eros. Suspendisse non lectus lorem.</p>
+				<p>Vivamus sed libero nec mauris pulvinar facilisis ut non sem. Quisque mollis ullamcorper diam vel faucibus. Vestibulum sollicitudin facilisis feugiat. Nulla euismod sodales hendrerit. Donec quis orci arcu. Vivamus fermentum magna a erat ullamcorper dignissim pretium nunc aliquam. Aenean pulvinar condimentum enim a dignissim. Vivamus sit amet lectus at ante adipiscing adipiscing eget vitae felis. In at fringilla est. Cras id velit ut magna rutrum commodo. Etiam ut scelerisque purus. Duis risus elit, venenatis vel rutrum in, imperdiet in quam. Sed vestibulum, libero ut bibendum consectetur, eros ipsum ultrices nisl, in rutrum diam augue non tortor. Fusce nec massa et risus dapibus aliquam vitae nec diam.</p>
+				<p>Phasellus ligula massa, congue ac vulputate non, dignissim at augue. Sed auctor fringilla quam quis porttitor. Praesent vitae dignissim magna. Pellentesque quis sem purus, vel elementum mi. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas consectetur euismod urna. In hac habitasse platea dictumst. Quisque tincidunt porttitor vestibulum. Ut iaculis, lacus at molestie lacinia, ipsum mi adipiscing ligula, vel mollis sem risus eu lectus. Nunc elit quam, rutrum ut dignissim sit amet, egestas at sem.</p>
+			</article>
+
+
+
+			<!-- ...............................................................................ARTICLE 2................................. -->
+			<article>
+				<h1>Article 2</h1>
+				<p> Liste des sujets :</p>
+				<ol>
+					<li>Les liens</li> <!-- strong est recherché par le moteur de recherche -->
+					<li>Le mail</li> <!-- li pour des puces -->
+					<li>Les images</li>
+					<li>Les classes</li> <!-- span pour appliquer style particulier -->
+					<li>Les tableaux</li>
+					<li>Les formulaires</li>
+					<li>Les médias</li>
+				</ol>
+				<p>
+					Aller directement à la partie traitant des
+					<a href="#image">images</a><br />
+					<!-- href créé un lien -->
+				</p>
+				<!-- ...............................................................................TITRE 2........................ -->
+				<!-- .....................................................1................................. -->
+				<h2>Les Liens</h2>
+				<p>
+					Bonjour. Souhaitez-vous visiter
+					<a href="https://openclassrooms.com" title="Vous ne le regretterez pas !" target="_blank">OpenClassrooms</a> ?
+				</p>
+				<!-- titre affiche une infobulle ; target blank force l'ouverture sur page/onglet vierge -->
+				<p>
+					Vous pouvez télécharger le fichier suivant <br>
+					<a href="#">Télécharger le fichier</a>
+					<!-- lien vers un dossier et un fichier -->
+				</p>
+				<!-- .....................................................2................................. -->
+				<h2>Le Mail</h2>
+				<p>
+					Cliquer sur le lien pour 
+					<a href="mailto:votrenom@bidule.com">Envoyez-moi un e-mail !</a>
+				</p>
+				<!-- .....................................................3................................. -->
+				<h2 id="image">Les Images</h2>
+				<figure>
+					Vous souhaitez voir l'image dans sa taille d'origine ? Cliquez dessus !<br />
+					<a href="img/montagne.jpg"><img src="img/montagne_mini.jpg" alt="Photo de montagne" title="Cliquez pour agrandir" /></a>
+					<figcaption>Une photo</figcaption>
+					<!-- href lien de l'image ; src image affichee dans le navigateur ; alt description courte ; title infobulle -->
+					<img src="img/firefox.PNG" alt="Logo Mozilla Firefox" />
+					<figcaption>Logo firefox</figcaption>
+					<!-- image sans lien, directement dans le navigateur -->
+				</figure>
+				<!-- .....................................................4................................. -->
+				<h2>Les Classes</h2>
+				<p class="classe1">
+					texte d'une classe ! <br>
+					texte d'une <span class="classe1">classe</span> !
+					<!-- une classe peut être utilisée plusieurs fois ; un id doit être unique -->
+				</p>
+
+
+				<h2>Les Tableaux</h2>
+				<table>
+					<tr> <!-- ligne -->
+						<th>Ligne 1</th>
+						<td>111111</td>
+						<td>222222</td>
+						<td>333333</td>
+					</tr>
+					<tr>
+						<th>Ligne 2</th>
+						<td>444444</td>
+						<td>555555</td>
+						<td rowspan="2">666666</td> <!-- Fusion -->
+					</tr>
+					<tr>
+						<th>Ligne 3</th>
+						<td>777777</td>
+						<td>888888</td>
+					</tr>
+				</table>
+
+
+
+
+				<h2>Les Formulaires</h2>
+
+
+				<div id="form">
+					<form method="post" action="traitement.php">
+
+
+						<fieldset>
+
+							<legend>Part1</legend> <!-- Titre du fieldset --> 
+
+
+							<p>
+								<label for="pseudo">Votre pseudo :</label>
+								<input type="text" name="pseudo" id="pseudo" placeholder="Ex : Pseudo" size="30" maxlength="10" />
+								<br />
+								<label for="pass">Votre mot de passe :</label>
+								<input type="password" name="pass" id="pass" />
+							</p>
+							<p>
+								<label for="ameliorer">Comment pensez-vous que je pourrais améliorer mon site ?</label><br />
+								<textarea name="ameliorer" id="ameliorer"rows="10" cols="20">Voici une zone de saisie pré-remplie</textarea>
+							</p>
+						</fieldset>
+						<fieldset>
+
+							<legend>Part2</legend> <!-- Titre du fieldset --> 
+							<p>
+								<p>
+									Email : <input type="email" required="" /><br>
+									URL : <input type="url" /><br>
+									Tel : <input type="tel" /><br>
+									Chiffre : <input type="number" /><br>
+									Date : <input type="date" /><br>
+									Cas : <input type="checkbox" name="case" id="case" checked="" /><label for="case">Cas</label><br>
+									Choix : <input type="radio" name="choix" value="37" id="37" /> <label for="37">Choix</label><br> <!-- même nom si plusieurs choix -->
+								</p>
+
+								<label for="pays">Dans quel pays habitez-vous ?</label><br />
+								<select name="pays" id="pays">
+									<optgroup label="Europe"> <!-- groupe -->
+										<option value="france">France</option>
+										<option value="espagne">Espagne</option>
+									</optgroup>
+									<option value="italie">Italie</option>
+									<option value="royaume-uni" selected>Royaume-Uni</option> <!-- sélectionné de base -->
+									<option value="canada">Canada</option>
+									<option value="etats-unis">États-Unis</option>
+									<option value="chine">Chine</option>
+									<option value="japon">Japon</option>
+								</select>
+							</p>
+						</fieldset>
+
+						<input type="submit" value="Envoyer" /> <!-- PHP -->
+					</form>
+				</div>
+
+
+				<h2>Les Médias</h2>
+				<p>
+					Audio : <br>
+					<audio src="hype_home.mp3" controls>Veuillez mettre à jour votre navigateur !</audio>
+				</p>
+				<p>
+					Vidéos  : <br>
+					<video src="sintel.webm" controls poster="sintel.jpg" width="400">
+						Il est temps de mettre à jour votre navigateur !
+					</video>
+				</p>
+
+
+
+
+			</article>
+
+
+
+			<!-- ..............................................................................ASIDE....................................... -->
+			<aside>
+				<h1>À propos de l'auteur</h1>
+				<img src="img/bulle.png" alt="" id="fleche_bulle" />
+				<p id="image_aside"><img src="img/gulf.png" alt="Logo Gulf" /></p>
+				<p>Cras ac vulputate neque, sit amet posuere ipsum. Integer venenatis ut velit nec aliquet. Integer nunc odio, fringilla at lobortis eu, consequat maximus tellus. Morbi in sem consequat, feugiat nulla ut, venenatis risus. Fusce et iaculis eros, eu tristique neque. Praesent tincidunt feugiat imperdiet. Morbi vitae finibus libero, efficitur efficitur sem. Donec vitae erat ornare, varius sem in, sollicitudin neque. Integer hendrerit maximus pulvinar. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vitae velit nisl. Suspendisse potenti. </p>
+				<p>Retrpuvez moi ici:.</p>
+				<p><img src="img/facebook.png" alt="Facebook" /><img src="img/twitter.png" alt="Twitter" /><img src="img/vimeo.png" alt="Vimeo" /><img src="img/flickr.png" alt="Flickr" /><img src="img/rss.png" alt="RSS" /></p>
+			</aside>
+		</section>
+
+
+
+		<!-- ..............................................................................................SECTION 2................................. -->
+		<!-- ..............................................................................................FOOTER.................................... -->
+
+		<footer>
+
+			<div id="tweet">
+				<h1>Dernier tweet</h1>
+				<p>Quelle belle page !</p>
+				<p>le 12 mai à 23h12</p>
+			</div>
+
+			<div id="mes_photos">
+				<h1>Mes photos</h1>
+				<p><img src="img/photo1.jpg" alt="Photographie" /><img src="img/photo2.jpg" alt="Photographie" /><img src="img/photo3.jpg" alt="Photographie" /><img src="img/photo4.jpg" alt="Photographie" /></p>
+			</div>
+
+			<div id="mes_amis">
+				<h1>Mes amis</h1>
+				<div id="listes_amis">
+					<ul>
+						<li><a href="#">Lorem</a></li>
+						<li><a href="#">Ipsum</a></li>
+						<li><a href="#">Dolor</a></li>
+						<li><a href="#">Sit</a></li>
+					</ul>
+					<ul>
+						<li><a href="#">Amet</a></li>
+						<li><a href="#">Consectetur</a></li>
+						<li><a href="#">Adipiscing</a></li>
+						<li><a href="#">Elit</a></li>
+					</ul>
+				</div>
+			</div>
+
+		</footer>
+
+
+
+	</div>
+</body>
+</html>
